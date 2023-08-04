@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EA World – EA Consulting Pvt. Ltd.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
+  <link rel="icon" type="image/x-icon" href="./cropped-ea-consulting-logo-32x32 favicon.png">
+  <style>
+    body{
+        background-color: #F1F1F1;
+    }
+    .navbar {
+      padding: 10px 0;
+    }
+
+    .navbar-brand {
+      margin-right: 20px;
+    }
+
+    .navbar-nav .nav-item {
+      margin-right: 10px;
+    }
+
+    .nav-link {
+      color: black;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: red;
+    }
+
+    .dropdown-menu {
+      transition: opacity 0.3s;
+    }
+
+    .dropdown-item {
+      transition: background-color 0.3s;
+    }
+
+    .dropdown-item:hover {
+      background-color: #f8f9fa;
+    }
+    .navbar-nav .nav-link.active {
+      background-color: #C91304;
+    }
+  
+    .navbar-nav .nav-link.active .nav-link-heading {
+      padding: 5px;
+      height: 100%;
+      color: white;
+    }
+    .footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.social-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+h4 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sitemap li,
+.services li,
+.contact-info li {
+  margin-bottom: 5px;
+}
+.map-section {
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .map-container-2 {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%; 
+  }
+
+  .map-container-2 iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  .image-hover {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+
+  .image-hover:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .overlay {
+    margin-left: 77px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 71%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    transform: translateY(100%);
+  }
+
+  .overlay-text {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .btn-hover:hover {
+    color: #F1F1F1;
+    background-color: #000;
+    border-color: #000;
+  }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"><img src="ea-consulting-logo.png" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">
+                  <div class="nav-link-heading">Home</div>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  About Us
+                </a>
+                <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                  <a class="dropdown-item" href="#">Item 1</a>
+                  <a class="dropdown-item" href="#">Item 2</a>
+                  <a class="dropdown-item" href="#">Item 3</a>
+                  <a class="dropdown-item" href="#">Item 4</a>
+                  <a class="dropdown-item" href="#">Item 5</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="deptDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Department & Sector
+                </a>
+                <div class="dropdown-menu" aria-labelledby="deptDropdown">
+                  <a class="dropdown-item" href="#">Item 1</a>
+                  <a class="dropdown-item" href="#">Item 2</a>
+                  <a class="dropdown-item" href="#">Item 3</a>
+                  <a class="dropdown-item" href="#">Item 4</a>
+                  <a class="dropdown-item" href="#">Item 5</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Our Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="#">Item 1</a>
+                  <a class="dropdown-item" href="#">Item 2</a>
+                  <a class="dropdown-item" href="#">Item 3</a>
+                  <a class="dropdown-item" href="#">Item 4</a>
+                  <a class="dropdown-item" href="#">Item 5</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./Project.html">Projects</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  EA Careers
+                </a>
+                <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                  <a class="dropdown-item" href="#">Item 1</a>
+                  <a class="dropdown-item" href="#">Item 2</a>
+                  <a class="dropdown-item" href="#">Item 3</a>
+                  <a class="dropdown-item" href="#">Item 4</a>
+                  <a class="dropdown-item" href="#">Item 5</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./Contact us.html">
+                  <div class="nav-link-heading">Contact Us</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--IMG-->
+    <section class="container-fluidy">
+      <img src="./contact.jpg">
+    </section>
+
+
+    <!--Google map-->
+    <div class="map-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="map-container-2">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23786.985034109445!2d-87.6297982!3d41.8781136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d14acc99b689b91!2sEA%20Consulting%20Pvt.%20LTD.!5e0!3m2!1sen!2sus!4v1625930238212!5m2!1sen!2sus" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Google Maps-->
+    
+<!--contact us-->
+<section class="py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="text-center"><h2>Contact Us</h2></div>
+        
+        <form class="py-5">
+          <div class="form-row">
+            <div class="col">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control rounded-pill" id="name" placeholder="Enter your name">
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" class="form-control rounded-pill" id="email" placeholder="Enter your email">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control rounded-pill" id="subject" placeholder="Enter the subject">
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea class="form-control rounded-pill" id="message" rows="2" placeholder="Enter your message"></textarea>
+          </div>
+            <button type="submit" class="btn btn-primary rounded-pill btn-hover">Submit</button>     
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="image-hover">
+          <img src="karachi.jpg" alt="Image 1" class="img-fluid">
+          <div class="overlay">
+            <div class="overlay-text">Image 1</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3>Head Office</h3>
+        <p>EA Consulting Pvt Ltd.</p>
+        <p>AL-9 15th Lane, Khe - Hilal, Phase VII, DHA</p>
+        <p>Karachi, Pakistan</p>
+        <p>info@eaworld.com</p>
+        <p>+92 21 111 111 584</p>
+        <p>+92 21 3584 1825</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Footer-->
+<div class="py-5">
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="logo-section">
+            <img src="./ea-consulting-logo.png" alt="Logo" class="logo-img">
+            <div class="social-buttons">
+              <a href="#" class="social-button"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-button"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h4>SITE MAP</h4>
+          <ul class="sitemap">
+            <li>Home</li>
+            <li>Careers</li>
+            <li>Contact Us</li>
+            <li>Projects</li>
+            <li>Sitemap</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>OUR SERVICES</h4>
+          <ul class="services">
+            <li>Urban Planning/Master Planning</li>
+            <li>Highways</li>
+            <li>MEP &amp; HVAC Design</li>
+            <li>Waste Water</li>
+            <li>Contracts Management</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>CONTACT US</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> AL-9 15th Lane, Phase VII, DHA, Karachi 75500</li>
+            <li><i class="fas fa-envelope"></i> info@eaworld.com</li>
+            <li><i class="fas fa-phone"></i> +92 21 111 111 584</li>
+            <li><i class="fas fa-phone"></i> +92 21 3584 1825</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+    <div class="grey-section text-center">
+      <p>&copy; 2019 - EA Consulting Pvt. Ltd.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
